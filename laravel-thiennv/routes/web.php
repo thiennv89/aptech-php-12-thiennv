@@ -11,6 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::view('/thien','index');
+
+// Route::prefix('thoi-trang')->group(function() {
+//     Route::get('viet-nam', function(){
+//         return 'thoi trang viet nam';
+//     });
+//     Route::get('quoc-te', function(){
+//         return 'thoi trang quoc te';
+//     });
+// });
+
+// Route::get('/', function(){
+//     return view('greeting', ['name'=>'thien']);
+// });
+Route::view('/','index');

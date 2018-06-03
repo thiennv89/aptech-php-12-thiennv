@@ -29,7 +29,8 @@
 		        <li class="active"><a href="#">Trang chủ</a></li>
 		        <li><a href="#">Khóa học</a></li>
 		        <li><a href="#">Môn học</a></li>
-		        <li><a href="#">Giáo viên</a></li>
+						<li><a href="#">Giáo viên</a></li>
+						<li><a href="#">Liên hệ</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#" data-toggle="modal" data-target="#form-login">Đăng nhập</a></li>
