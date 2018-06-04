@@ -29,4 +29,9 @@
 // Route::get('/', function(){
 //     return view('greeting', ['name'=>'thien']);
 // });
-Route::view('/','contact');
+// Route::view('/','home');
+// Route::view('/contact','contact');
+
+Route::get('/','PagesController@cook');
+Route::get('/about','PagesController@about');
+Route::get('/contact','PagesController@contact_cook');
