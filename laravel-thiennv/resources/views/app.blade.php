@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>App Name - @yield('title')</title>
+        <title>App Name - @yield('title','home')</title>
     </head>
     <body>
         @section('sidebar')

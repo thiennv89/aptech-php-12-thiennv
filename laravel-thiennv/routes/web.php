@@ -29,4 +29,4 @@
 // Route::get('/', function(){
 //     return view('greeting', ['name'=>'thien']);
 // });
-Route::view('/','index');
+Route::view('/','contact');

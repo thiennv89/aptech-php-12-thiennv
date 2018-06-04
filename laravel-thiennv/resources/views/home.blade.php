@@ -1,46 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Home Page</title>
-    <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' typ\
-e='text/css'>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            color: #B0BEC5;
-            display: table;
-            font-weight: 100;
-            font-family: 'Lato';
-        }
-        .container {
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-        }
-        .content {
-            text-align: center;
-            display: inline-block;
-        }
-        .title {
-            font-size: 96px;
-            margin-bottom: 40px;
-        }
-        .quote {
-            font-size: 24px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@yield ('title','Home') </title>
 </head>
 <body>
-<div class="container">
-Chapter 1: Back End Recipes
-
-<div class="content">
-<div class="title">Home Page</div>
-<div class="quote">Our Home page!</div>
-
-</div>
-</div>
+    @section('header')
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+        @show
+    @section('content')
+        <p>This is my information</p>
+        @show
+    @section('footer')
+    <section>
+        <footer>
+            <p>Copyright &copy; <?php echo date('Y'); ?></p>
+        </footer>
+    </section>
+        @show
 </body>
-</html> 
+</html>
