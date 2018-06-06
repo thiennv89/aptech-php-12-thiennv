@@ -15,7 +15,7 @@
 //     return view('welcome');
 // });
 
-// Route::view('/thien','index');
+Route::view('/','main');
 
 // Route::prefix('thoi-trang')->group(function() {
 //     Route::get('viet-nam', function(){
@@ -32,6 +32,6 @@
 // Route::view('/','home');
 // Route::view('/contact','contact');
 
-Route::get('/','PagesController@cook');
-Route::get('/about','PagesController@about');
-Route::get('/contact','PagesController@contact_cook');
+// Route::get('/','PagesController@cook');
+// Route::get('/about','PagesController@about');
+// Route::get('/contact','PagesController@contact_cook');
