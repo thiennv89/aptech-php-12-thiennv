@@ -15,7 +15,7 @@
 //     return view('welcome');
 // });
 
-Route::view('/','main');
+// Route::view('/','main');
 
 // Route::prefix('thoi-trang')->group(function() {
 //     Route::get('viet-nam', function(){
@@ -35,3 +35,5 @@ Route::view('/','main');
 // Route::get('/','PagesController@cook');
 // Route::get('/about','PagesController@about');
 // Route::get('/contact','PagesController@contact_cook');
+
+Route::get('/','UserController@getUser');
