@@ -36,4 +36,4 @@
 // Route::get('/about','PagesController@about');
 // Route::get('/contact','PagesController@contact_cook');
 
-Route::get('/','UserController@getUser');
+Route::get('/','InforController@getInfor');
