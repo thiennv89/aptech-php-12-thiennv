@@ -11,6 +11,7 @@
                 <a class="btn btn-primary" href="{{ route('articles.index') }}"> Back</a>
             </div>
         </div>
+        
     </div>
 
 
@@ -24,7 +25,12 @@
             </ul>
         </div>
     @endif
-
+    {{-- <form action="{{route('articles.store')}}" method="post">
+        @include('articles.form');
+    </form> --}}
+    
+   
+    
 
     {!! Form::open(array('route' => 'articles.store','method'=>'POST')) !!}
          @include('articles.form')
