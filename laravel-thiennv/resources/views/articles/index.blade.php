@@ -36,16 +36,20 @@
         <td>
             <a class="btn btn-info" href="{{ route('articles.show',$article->id) }}">Show</a>
             <a class="btn btn-primary" href="{{ route('articles.edit',$article->id) }}">Edit</a>
-            
- 
-            {!! Form::open(['method' => 'DELETE','route' => ['articles.destroy', $article->id],'style'=>'display:inline']) !!}
+    
+            <form action="{{route('articles.destroy',$article->id)}}" method="post" style="display:inline">
+                {{csrf_field()}}
+                <input type="hidden" name="_method" value="DELETE">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+            {{-- {!! Form::open(['method' => 'DELETE','route' => ['articles.destroy', $article->id],'style'=>'display:inline']) !!}
             {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-            {!! Form::close() !!}
+            {!! Form::close() !!} --}}
         </td>
     </tr>
     @endforeach
     </table>
 
 
-    {!! $articles->links() !!}
+    {{-- {!! $articles->links() !!} --}}
 @endsection

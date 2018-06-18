@@ -24,11 +24,16 @@
             </ul>
         </div>
     @endif
+    <form action="{{route('articles.update', $article->id)}}" method="post">
+        {{csrf_field()}}
+        <input type="hidden" name="_method" value="PUT">
+        @include('articles.form'); 
+    </form>
 
-
+{{-- 
     {!! Form::model($article, ['method' => 'PATCH','route' => ['articles.update', $article->id]]) !!}
         @include('articles.form')
-    {!! Form::close() !!}
+    {!! Form::close() !!} --}}
 
 
 @endsection

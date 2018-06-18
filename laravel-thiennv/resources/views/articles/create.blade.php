@@ -25,16 +25,17 @@
             </ul>
         </div>
     @endif
-    {{-- <form action="{{route('articles.store')}}" method="post">
-        @include('articles.form');
-    </form> --}}
+    <form action="{{route('articles.store')}}" method="post">
+        {{csrf_field()}}
+        @include('articles.form')
+    </form>
     
    
     
 
-    {!! Form::open(array('route' => 'articles.store','method'=>'POST')) !!}
+    {{-- {!! Form::open(array('route' => 'articles.store','method'=>'POST')) !!}
          @include('articles.form')
-    {!! Form::close() !!}
+    {!! Form::close() !!} --}}
 
 
 @endsection

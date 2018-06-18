@@ -36,6 +36,6 @@
 // Route::get('/about','PagesController@about');
 // Route::get('/contact','PagesController@contact_cook');
 
-Route::get('/','InforController@getInfor');
+// Route::get('/','InforController@getInfor');
 
-// Route::resource('articles','ArticlesController');
+Route::resource('articles','ArticlesController');
