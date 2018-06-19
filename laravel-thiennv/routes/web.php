@@ -15,7 +15,7 @@
 //     return view('welcome');
 // });
 
-// Route::view('/','main');
+Route::view('/','main');
 
 // Route::prefix('thoi-trang')->group(function() {
 //     Route::get('viet-nam', function(){
@@ -38,4 +38,4 @@
 
 // Route::get('/','InforController@getInfor');
 
-Route::resource('articles','ArticlesController');
+// Route::resource('articles','ArticlesController');
