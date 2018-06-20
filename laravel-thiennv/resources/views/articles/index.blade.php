@@ -38,8 +38,8 @@
             <a class="btn btn-primary" href="{{ route('articles.edit',$article->id) }}">Edit</a>
     
             <form action="{{route('articles.destroy',$article->id)}}" method="post" style="display:inline">
-                {{csrf_field()}}
                 <input type="hidden" name="_method" value="DELETE">
+                {{csrf_field()}}
                 <button type="submit" class="btn btn-danger">Delete</button>
             </form>
             {{-- {!! Form::open(['method' => 'DELETE','route' => ['articles.destroy', $article->id],'style'=>'display:inline']) !!}
